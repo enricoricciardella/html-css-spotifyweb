@@ -12,6 +12,23 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+h6 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+p{
+    text-align: center;
+    font-weight: 500;
+    color: grey;
+    font-size: 0.6em;
+}
+
 /* COMMON */
 /* LAYOUT */
 
@@ -39,7 +56,7 @@ body {
     height: 80px;
     /* debug */
     border: 1px solid violet;
-    background-color: lightgreen;
+    background-color: rgba(2, 2, 2, 0.513);
     /* /FOOTER */
 }
 
@@ -47,7 +64,7 @@ body {
     width: 250px;
     /* debug */
     border: 1px solid black;
-    background-color: aqua;
+    background-color: rgb(122, 142, 142);
     min-height: 200px;
 }
 
@@ -56,9 +73,79 @@ body {
 
     /* debug */
     border: 1px solid black;
-    background-color: blue;
+    background-color: rgb(143, 167, 90);
     min-height: 200px;
 }
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    color: white;
+    /* debug */
+    border: 1px solid rgba(0, 0, 0, 0);
+
+}
+.logo-grande {
+    width: 100px;
+}
+
+.effettua {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 4px 30px;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    padding: 10px 10px 20px;
+    height: calc(100% - 80px);
+    overflow-y: auto;
+    /* debug */
+    background-color: rgb(41, 56, 123);
+}
+.row-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 0.8em;
+    color: white;
+}
+.recently {
+    padding: 5px;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    /* debug */
+}
+.card {
+    padding: 20px;
+    width: calc(100% / 6);
+    /* debug */
+    min-height: 250px;
+    border: 1px solid black;
+}
+
+.ascolti {
+    color: rgb(146, 142, 142);
+    font-weight: 500;
+}
+
+/* IMMAGINI TONDE  */
+.tonde {
+    border-radius: 50%;
+}
+
+
+
+
+
+
 
 
 
@@ -77,32 +164,51 @@ body {
 
 /* 1024px */
 @media screen and (max-width: 1024px) {
-.side-bar{
-    width: 250px;
-}
-.music-box {
-    width: calc(100% - 250px);
-}
+    .side-bar {
+        width: 250px;
+    }
+
+    .music-box {
+        width: calc(100% - 250px);
+    }
+    /* SOTTOTITOLO SCOPRI VA CAPO */
+    .row {
+        flex-wrap: wrap;
+    }
+    
+    .card{
+        width: calc(100% / 4);
+    }
+
 }
 
 /* 768px */
 @media screen and (max-width: 768px) {
-    .side-bar{
+    .side-bar {
         width: 250px;
     }
+
     .music-box {
         width: calc(100% - 250px);
     }
-
+    .card {
+        width: calc(100% / 2);
+    }
 }
 
 /* 425px */
 @media screen and (max-width: 425px) {
-    .side-bar{
+    .side-bar {
         width: 50px;
     }
+
     .music-box {
         width: calc(100% - 50px);
+    }
+
+    /* FOTO */
+    .card {
+        width: calc(100% / 2);
     }
 
 }
