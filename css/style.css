@@ -75,4 +75,34 @@ body {
 /* RESPONSIVE */
 /* ***************** */
 
-@media screen and (max-width: 1024px) {}
+/* 1024px */
+@media screen and (max-width: 1024px) {
+.side-bar{
+    width: 250px;
+}
+.music-box {
+    width: calc(100% - 250px);
+}
+}
+
+/* 768px */
+@media screen and (max-width: 768px) {
+    .side-bar{
+        width: 250px;
+    }
+    .music-box {
+        width: calc(100% - 250px);
+    }
+
+}
+
+/* 425px */
+@media screen and (max-width: 425px) {
+    .side-bar{
+        width: 50px;
+    }
+    .music-box {
+        width: calc(100% - 50px);
+    }
+
+}
