@@ -32,6 +32,9 @@ p{
     color: grey;
     font-size: 0.6em;
 }
+footer{
+    color: white;
+}
 
 /* COMMON */
 /* LAYOUT */
@@ -49,35 +52,31 @@ p{
     width: 100%;
     height: calc(100% - 80px);
     /* debug */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: lightcoral;
 
 }
 
 
-/* FOOTER PLAY NAV */
-.footer-nav {
-    height: 80px;
-    /* debug */
-    border: 1px solid violet;
-    background-color: rgba(2, 2, 2, 0.513);
-    /* /FOOTER */
-}
 
 .side-bar {
+    display: flex;
+    flex-direction: column;
     width: 250px;
     /* debug */
-    border: 1px solid black;
-    background-color: rgb(122, 142, 142);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     min-height: 200px;
 }
-
+.playlist{
+    color: white;
+}
 .music-box {
     width: calc(100% - 250px);
-
+    
     /* debug */
     border: 1px solid black;
-    background-color: rgb(143, 167, 90);
+    background-color: rgb(0, 0, 0);
     min-height: 200px;
 }
 
@@ -88,7 +87,7 @@ p{
     color: white;
     /* debug */
     border: 1px solid rgba(0, 0, 0, 0);
-
+    
 }
 .logo-big {
     padding: 20px;
@@ -103,6 +102,9 @@ p{
     border-radius: 20px;
     padding: 4px 30px;
 }
+.effettua:hover{
+    color: white;
+}
 
 /* MAIN CONTENT */
 .main-content {
@@ -110,7 +112,7 @@ p{
     height: calc(100% - 80px);
     overflow-y: auto;
     /* debug */
-    background-color: rgb(41, 56, 123);
+    background-color: rgb(0, 0, 0);
 }
 .row-title{
     display: flex;
@@ -156,10 +158,6 @@ p{
     width: 30px;
     margin-left: 10px;
 }
-/* BARRA FOOTER */
-.left-footer {
-    width: 65px;
-}
 
 .list{
     display: flex;
@@ -168,23 +166,29 @@ p{
 }
 
 .hight-list {
-    
     width: 100%;
     height: 300px;
     border: 1px solid black;
-    background-color: lightsalmon;
+    background-color: rgb(0, 0, 0);
 }
 .bottom-list{
+    
     width: 100%;
     height: 150px;
-
+    
     border: 1px solid black;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.556);
 }
 .hight-list img{
     width: 30px;
     text-align: center;
     margin-left: 10px;
+}
+.bottom-list img{
+    width: 30px;
+    text-align: center;
+    margin-left: 10px;
+    
 }
 .hight-list span{
     
@@ -198,13 +202,103 @@ p{
     margin-left: 10px;
 }
 
+/* BARRA FOOTER */
+/* FOOTER PLAY NAV */
+.footer-nav {
+    display: flex;
+    height: 80px;
+    /* debug */
+    /* border: 1px solid violet; */
+    background-color: rgba(2, 2, 2, 0.513);
+
+}
+
+.left-nav {
+    width: 33%;
+    height: 100%;
+    /* debug */
+    border: 1px solid black;
+    background-color: rgba(40, 40, 40, 1);
+}
+.left-nav img{
+    width: 75px;
+    display: flex;
+    padding: 5px;
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+.icone{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+
+}
 
 
+.center-nav{
+    width: 34%;
+    height: 100%;
+    /* debug */
+    border: 1px solid white;
+    background-color: rgba(40, 40, 40, 1)
+}
+
+.right-nav{
+    padding-right: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 33%;
+    height: 100%;
+    /* debug */
+    border: 1px solid black;
+    background-color: rgba(40, 40, 40, 1)
+}
+
+.btn-player{
+display: flex;
+justify-content: space-around;
+gap: 20px;
+margin-top: 10px;
+font-size: 20px;    
+}
+
+/* BARRA CENTRALE */
+.barra{
+    display: flex;
+    justify-content: space-between;
+}
+
+#linea-player{
+    margin-top: 10px;
+    height: 4px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.447);
 
 
+}
 
 
+.luce-linea{
+    width: 30%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+}
 
+.luce-linea:hover{
+    background-color: lime;
+}
+
+.linea-piccola{
+    height: 4px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.447);
+}
 
 
 
@@ -230,6 +324,9 @@ p{
     
     .card{
         width: calc(100% / 4);
+    }
+    .footer-nav, .left-nav ,.center-nav, .right-nav{
+    
     }
 
 }
@@ -271,5 +368,8 @@ p{
         align-items: center;
         width: 40px;
         margin-left: 5px;
+    }
+    .icone{
+        flex-wrap: wrap;
     }
 }
