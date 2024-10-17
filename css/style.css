@@ -43,7 +43,7 @@ footer{
     width: 100%;
     height: 100vh;
     /* debug */
-    border: 2px solid rgb(96, 43, 43);
+    /* border: 2px solid rgb(96, 43, 43); */
     background-color: lightblue;
 }
 
@@ -64,7 +64,7 @@ footer{
     flex-direction: column;
     width: 250px;
     /* debug */
-    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
     background-color: rgb(0, 0, 0);
     min-height: 200px;
 }
@@ -75,7 +75,7 @@ footer{
     width: calc(100% - 250px);
     
     /* debug */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: rgb(0, 0, 0);
     min-height: 200px;
 }
@@ -86,7 +86,7 @@ footer{
     justify-content: end;
     color: white;
     /* debug */
-    border: 1px solid rgba(0, 0, 0, 0);
+    /* border: 1px solid rgba(0, 0, 0, 0); */
     
 }
 .logo-big {
@@ -172,7 +172,9 @@ footer{
     background-color: rgb(0, 0, 0);
 }
 .bottom-list{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     width: 100%;
     height: 150px;
     
@@ -201,7 +203,10 @@ footer{
 .playlist{
     margin-left: 10px;
 }
-
+.nome-playlist{
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
 /* BARRA FOOTER */
 /* FOOTER PLAY NAV */
 .footer-nav {
@@ -243,7 +248,7 @@ footer{
     width: 34%;
     height: 100%;
     /* debug */
-    border: 1px solid white;
+    /* border: 1px solid white; */
     background-color: rgba(40, 40, 40, 1)
 }
 
@@ -256,7 +261,7 @@ footer{
     width: 33%;
     height: 100%;
     /* debug */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: rgba(40, 40, 40, 1)
 }
 
@@ -372,4 +377,11 @@ font-size: 20px;
     .icone{
         flex-wrap: wrap;
     }
+    span{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+ 
 }
